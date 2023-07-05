@@ -1,0 +1,150 @@
+.App {
+  text-align: center;
+}
+
+
+.quest {
+  outline: 1px solid #4D5B9E;
+}
+
+.selected {
+  background-color: #D6DBF5;
+  outline: none;
+}
+
+.correct {
+  background-color: #94D7A2;
+  outline: none;
+}
+
+.wrong {
+  background-color: #F8BCBC;
+  outline: none;
+}
+
+
+
+.App {
+  background-color: #F5F7FB;
+  color: #293264;
+  padding: 30px 10%;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .split {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    
+    .sidebar {
+      background-color: #819BA6;
+      width: 100%;
+      color: white;
+      font-weight: 800;
+      font-size: 1rem;
+
+      .p {
+        margin: 10px;
+      }
+
+      button {
+        background-color: #94D7A2;
+        padding: 10px;
+        width: 150px;
+        border-radius: 15px;
+        margin: 10px;
+      }
+    }
+  }
+
+  .qsts {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .homePage {
+    align-self: center;
+    margin: auto;
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-size: 1em;
+      font-weight: lighter;
+    }
+
+    h1,
+    p {
+      color: #293264;
+      font-weight: 700;
+    }
+
+    button {
+      background-color: #4D5B9E;
+      width: 180px;
+      padding: 10px;
+      border-radius: 15px;
+      font-weight: 500;
+      margin-top: 20px;
+      outline: none;
+    }
+  }
+
+  .questions {
+    text-align: start;
+    width: 90%;
+
+    p {
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    .spans {
+      display: flex;
+      flex-wrap: wrap;
+
+      span {
+        margin: 10px;
+        margin-left: 0;
+        padding: 5px 8px;
+        cursor: pointer;
+        font-weight: 600;
+
+
+      }
+    }
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    flex-wrap: wrap;
+    column-gap: 100px;
+
+    button {
+      background-color: #4D5B9E;
+      width: 160px;
+      padding: 10px;
+      border-radius: 15px;
+      font-weight: 500;
+      color: white;
+      outline: none;
+    }
+
+    p {
+      padding: 10px;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+  }
+}
